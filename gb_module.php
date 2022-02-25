@@ -110,20 +110,17 @@ if ($result) {
 		echo stripslashes($row["text"]); 
 ?>
 			</td></tr>
-			<tr><td>&nbsp;</td><td>
-
-		</p>
-				
-		<form ACTION="guestbook.php" METHOD="GET">
-		<input type="hidden" name="id" value="<?php echo $row["id"]; ?>" />
-
-		<input style="width:30px;" type="password" name="password" value="Пароль" title="Укажите пароль" />
-		<input type="submit" value=" Удалить запись " title="Удалите запись" />
-		&nbsp;</form>
+	<tr><td>&nbsp;</td>
 			
-		
-			</td></tr>
-			</table>	
+		<td>
+			<form ACTION="guestbook.php" METHOD="GET">
+			<input type="hidden" name="id" value="<?php echo $row["id"]; ?>" />
+			<input style="width:30px;" type="password" name="password" value="Пароль" title="Укажите пароль" />
+			<input type="submit" value=" Удалить запись " title="Удалите запись" />
+			&nbsp;</form>
+		</td>
+	</tr>
+	</table>	
 
 <?php
 
