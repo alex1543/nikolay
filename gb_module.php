@@ -13,7 +13,9 @@
 
 // основной блок	
 ?>
-	<FORM ACTION="guestbook.php" METHOD="POST">
+
+<button style="margin-left:320px;width:70px;" onclick='alerted();' title="Добавьте запись"> Добавить </button>
+	<FORM ACTION="guestbook.php" METHOD="POST" id="addForm" style="display: none;">
 		<table>
 			<tr><td>Ваше имя:</td><td><INPUT TYPE="text" NAME="name" SIZE=20 MAXLENGTH="30"><td></tr>
 			<tr><td>Ваш email:</td><td><INPUT TYPE="text" NAME="email" SIZE=20 MAXLENGTH="30"></td></tr>
@@ -21,6 +23,15 @@
 			<tr><td>&nbsp;</td><td><INPUT TYPE="submit" VALUE=" Отправить "></td></tr>		
 		</table>
 	</FORM>
+<script type="text/javascript">
+function alerted(){
+	var addForm = document.getElementById('addForm'); // найти элемент
+	if (addForm.style.display=='none') {
+		addForm.style.display = 'block';} else {
+		addForm.style.display = 'none';
+	}
+}
+</script>
 	
 	<?php	
 
@@ -100,16 +111,17 @@ if ($result) {
 ?>
 			</td></tr>
 			<tr><td>&nbsp;</td><td>
-<?php
-		echo "</p>";
+
+		</p>
 				
-		echo "<FORM ACTION=\"guestbook.php\" METHOD=\"GET\">";
-		echo "<input type=\"hidden\" name=\"id\" value=" . $row["id"] . ">";
-		echo "<INPUT TYPE=\"submit\" VALUE=\" Удалить запись \">";
-		echo "<input type=\"password\" name=\"password\" value=\"Пароль\">";
-		echo "&nbsp;</FORM>";
+		<form ACTION="guestbook.php" METHOD="GET">
+		<input type="hidden" name="id" value="<?php echo $row["id"]; ?>" />
+
+		<input style="width:30px;" type="password" name="password" value="Пароль" title="Укажите пароль" />
+		<input type="submit" value=" Удалить запись " title="Удалите запись" />
+		&nbsp;</form>
 			
-?>			
+		
 			</td></tr>
 			</table>	
 
