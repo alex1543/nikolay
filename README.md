@@ -6,7 +6,7 @@
 
 Гостевая книга (с возможностью добавления записей).
 
-![image](https://user-images.githubusercontent.com/10297748/155679857-f1584167-d700-476c-8510-fe8f27457091.png)
+![image](https://user-images.githubusercontent.com/10297748/155681907-e4419a44-9f7d-4d49-a1ca-a467c0549889.png)
 
 Редактирование страниц из служебной страницы.
 
