@@ -10,7 +10,7 @@
 
 Типовая страница сайта.
 
-![image](https://user-images.githubusercontent.com/10297748/155683762-330fe314-5d46-4702-8eb2-a18a741eaf52.png)
+![image](https://user-images.githubusercontent.com/10297748/155683927-86ea3ab7-9328-4cb8-a3ea-7fae1d36fc78.png)
 
 Редактирование типовых страниц из служебной страницы (редактор).
 
