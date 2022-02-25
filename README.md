@@ -6,7 +6,7 @@
 
 Гостевая книга (с возможностью добавления записей).
 
-![image](https://user-images.githubusercontent.com/10297748/155681907-e4419a44-9f7d-4d49-a1ca-a467c0549889.png)
+![image](https://user-images.githubusercontent.com/10297748/155723208-fdfe576a-53de-4e5c-ad43-9e7c3c9dc564.png)
 
 Типовая страница сайта.
 
