@@ -1,0 +1,281 @@
+﻿* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	min-height:100%;
+}
+
+body {
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size:12px;
+	background: linear-gradient(to top, #ffffff 10%, #e7f0f3 55%, #f1f6f8 95%);
+}
+
+/*Header*/
+header{
+	background: url(img/header.png) repeat-x;
+	width:100%;
+	min-width:960px;
+	height:140px;
+	margin:0 auto;
+}
+header h1{
+	text-align:left;
+	color:#07152f;
+
+	padding-top:40px;
+	padding-left:45px;
+    font-size: 26px;
+}
+header h2{
+	color:#253a62;
+	padding-top:5px;
+	padding-left:235px;
+    font-size: 30px;
+}
+
+header h1 a, header h2 a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #7ab899;
+    text-shadow: 1px 1px 2px black, 0 0 1em #9fcbb5;
+    padding-left: 12px;
+}
+
+/*nav*/
+nav{
+	float:left;
+	width:100%;
+	min-width:960px;
+	height: 20px;
+	margin:0 auto;
+	background-color:#29909D;
+	border-top: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
+	margin-top:28px;
+}
+nav p{
+	float:left;
+	width:19.70%;
+	display:block;
+	height:35px;
+	text-align:center;
+	padding-top: 15px;
+	border-left:2px solid white;
+	color:#18427c;
+	background-color:#E5E5E5;
+}
+nav a{
+	text-decoration:none;
+	color:black;
+	width:19.70%;
+	display:block;
+	float:left;
+	height:35px;
+	text-align:center;
+	padding-top: 15px;
+	border-left:2px solid white;
+}
+
+nav a:hover{
+	background-color:#FFBD00;
+}
+
+
+
+/*content*/
+content{
+	width:100%;
+	min-width:960px;
+	margin:0 auto;
+	background-color:#D7EEFB;
+	border: 0px;
+
+}
+
+/*aside*/
+aside{
+	width:190px;
+	background-color: #dae7ec;
+	margin: 0 auto;
+	float: left;
+}
+aside ul {
+	min-height:720px;
+	height:100%;
+	margin:0px;
+}
+aside li{
+	list-style-type: none;
+	border: 1px solid #99a6ae;
+	background-color:#8DD0D9;
+	margin:10px;
+//	background: linear-gradient(to top, #FCCC4E 10%, #FCD56C 55%, #FDCD4F 95%);
+}
+aside li:hover {
+	background: linear-gradient(to top, #FCD56C 10%, #FCCC4E 55%, #FDCD4F 95%);
+}
+aside p{
+	padding:10px;
+	border: 0px;
+	margin:10px;
+	text-align:left;
+	color:black;
+	background-color:#75BBC4;
+}
+aside ul p{
+	padding:10px;
+	border: 1px solid #99a6ae;
+	margin:10px;
+	text-align:left;
+
+}
+
+aside li a {
+	text-decoration:none;
+	display:block;
+	color:#18424C;
+	padding:10px;
+}
+
+/*main*/
+main {
+	margin:0px;
+	float: left;
+	min-width:1060px;
+	min-height:495px;
+}
+main h2 {
+	margin-top:40px;
+	color:#18427c;
+	text-align:left;
+	margin-left:350px;
+}
+main h3 { 
+	margin-top:20px;
+	margin-left:325px;
+	color:#18427c;
+}
+main h4 {
+	margin-top:20px;
+	margin-left:250px;
+	color:#18427c;
+}
+main p{
+	margin-top:25px;
+	margin-left:215px;
+	color:#18427c;
+}
+main a {
+	color:#909090;
+}
+main a:hover {
+	color:#101010;
+}
+main img {
+	margin-top:15px;
+	margin-left:30px;
+	border: 2px solid #ffffff;
+	padding:4px;
+}
+main span {
+	color:red;
+}
+main table {
+	font-size:14px;
+	margin:10px;
+	padding:10px;
+	border:1px gray solid;
+	margin-left:230px;
+}
+main table tr td {
+	width:220px;
+	padding:10px;
+}
+main table tr td img {
+	margin:0px;
+
+}
+main table tr {
+	font-family:Arial, Helvetica, sans-serif;
+	vertical-align:center;
+	font-size:12px;
+	margin:10px;
+	padding:10px;
+	
+}
+main table tr td:nth-child(odd) {
+	text-align:right;
+	color:#18424C;
+}
+main table tr td:nth-child(even) {
+	text-align:left;
+	color:black;
+}
+main iframe {
+	margin-top:15px;
+	margin-left:50px;
+	border: 2px solid #ffffff;
+	padding:4px;
+	min-width:660px;
+	height:400px;
+	float:left;
+}
+
+main form table {
+	font-size:14px;
+	margin:10px;
+	padding:10px;
+	border:1px gray solid;
+	margin-left:230px;
+}
+main form table tr {
+	font-size:12px;
+	margin:10px;
+	padding:10px;
+}
+
+
+.new_li {
+	margin-top:10px;
+	margin-left:230px;
+	list-style-type:decimal;
+	padding:10px;
+	color:#0f0f0f;
+}
+
+
+/*footer*/
+footer{
+	float:left;
+	width:100%;
+	margin:0px;
+	height:50px;
+	background-color: #e5eef2;
+	border: 2px solid #ffffff;
+	
+	position:fixed;
+    bottom:0;
+}	
+footer h6 {
+	float:right;
+	text-align:right;
+	margin-top:15px;
+	margin-right:15px;
+	color:#7ab899;
+}
+footer h7 {
+	text-align:right;
+	margin-top:60px;
+	margin-right:5px;
+}
+footer a {
+	color:#909090;
+	margin:10px;
+}
+footer a:hover {
+	color:#101010;
+}
+
