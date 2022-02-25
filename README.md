@@ -10,7 +10,7 @@
 
 Редактирование страниц из служебной страницы.
 
-![image](https://user-images.githubusercontent.com/10297748/155680010-9bb1d0ef-775d-49f0-b31e-78a8fddd1e48.png)
+![image](https://user-images.githubusercontent.com/10297748/155681626-4076a822-2fad-4fae-ac37-b508e4a4859d.png)
 
 Пример отредактированной страницы.
 
