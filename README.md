@@ -2,7 +2,7 @@
 
 Титульная страница. Хороший пример сайта для обучения.
 
-![image](https://user-images.githubusercontent.com/10297748/155682101-92a2915c-5dc5-42f3-aa60-d91cea9858e8.png)
+![image](https://user-images.githubusercontent.com/10297748/155683337-dcc43223-641f-414d-9b86-2719606e61cd.png)
 
 Гостевая книга (с возможностью добавления записей).
 
