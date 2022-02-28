@@ -271,6 +271,13 @@ main form table tr {
 	color:#0f0f0f;
 }
 
+.ViewEdit {
+	background-color: #EAF0F3;
+}
+.ViewEdit:hover {
+	background-color: white;
+	color: #463906;
+}
 
 /*footer*/
 footer{

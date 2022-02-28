@@ -59,13 +59,13 @@ document.createElement('content');
 	<FORM ACTION="edit.php" METHOD="POST">
 		<table style="font-size:14px;margin:10px;padding:10px;border:1px gray solid;margin-left:230px;">
 		<tr style="font-size:12px;margin:10px;padding:10px;"><td>Обо мне:</td>
-		<td><TEXTAREA NAME="msg1" COLS=50 ROWS=10><?php echo MyReadBDSQL(2); ?></TEXTAREA></td></tr>
+		<td><TEXTAREA class='ViewEdit' NAME="msg1" COLS=50 ROWS=10><?php echo MyReadBDSQL(2); ?></TEXTAREA></td></tr>
 		<tr style="font-size:12px;margin:10px;padding:10px;"><td>Мои интересы:</td>
-		<td><TEXTAREA NAME="msg2" COLS=50 ROWS=10><?php echo MyReadBDSQL(3); ?></TEXTAREA></td></tr>
+		<td><TEXTAREA class='ViewEdit' NAME="msg2" COLS=50 ROWS=10><?php echo MyReadBDSQL(3); ?></TEXTAREA></td></tr>
 		<tr style="font-size:12px;margin:10px;padding:10px;"><td>Полезное:</td>
-		<td><TEXTAREA NAME="msg3" COLS=50 ROWS=10><?php echo MyReadBDSQL(4); ?></TEXTAREA></td></tr>
+		<td><TEXTAREA class='ViewEdit' NAME="msg3" COLS=50 ROWS=10><?php echo MyReadBDSQL(4); ?></TEXTAREA></td></tr>
 		<tr style="font-size:12px;margin:10px;padding:10px;"><td>Почта:</td>
-		<td><TEXTAREA NAME="msg4" COLS=50 ROWS=10><?php echo MyReadBDSQL(5); ?></TEXTAREA></td></tr>
+		<td><TEXTAREA class='ViewEdit' NAME="msg4" COLS=50 ROWS=10><?php echo MyReadBDSQL(5); ?></TEXTAREA></td></tr>
 		<tr style="font-size:12px;margin:10px;padding:10px;"><td>&nbsp;</td>
 		<td style="text-align:right;">
 			<input style="width:30px;" type="password" name="password" value="Пароль" title="Укажите пароль" />
