@@ -123,6 +123,8 @@ if ($result) {
 <?php
 
 	}
+	
+?> 	<br /><br /><br /> <?php
 } else {
 	echo "<p>Нет ни одной записи.</p>";
 }
