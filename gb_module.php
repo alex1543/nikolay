@@ -16,7 +16,7 @@
 
 <button style="margin-left:320px;width:70px;cursor:pointer;" onclick='alerted();' title="Добавьте запись"> Добавить </button>
 	<FORM ACTION="guestbook.php" METHOD="POST" id="addForm" style="display: none;">
-		<table>
+		<table class='ViewAdd'>
 			<tr><td>Ваше имя:</td><td><INPUT TYPE="text" NAME="name" SIZE=20 MAXLENGTH="30"><td></tr>
 			<tr><td>Ваш email:</td><td><INPUT TYPE="text" NAME="email" SIZE=20 MAXLENGTH="30"></td></tr>
 			<tr><td>Сообщение:</td><td><TEXTAREA NAME="message" COLS=50 ROWS=10></TEXTAREA></td></tr>
@@ -32,9 +32,8 @@ function alerted(){
 	}
 }
 </script>
-	
-	<?php	
 
+<?php	
 // блок удаления записи
 	if (isset($_GET["id"])) {
 		if ($_GET["password"] == MyPW()) {
@@ -92,7 +91,7 @@ if ($result) {
 		$row = mysqli_fetch_array($result);
 ?>
 		
-		<table>
+		<table class='ViewMessage'>
 			<tr><td>Имя:</td><td>
 <?php
 		echo stripslashes($row["name"]);

@@ -237,6 +237,12 @@ main form table tr {
 	padding:10px;
 }
 
+.ViewAdd:hover {
+	background-color: #E3EDF1;
+}
+.ViewMessage:hover {
+	background-color: #EAF0F3;
+}
 
 .new_li {
 	margin-top:10px;
