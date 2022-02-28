@@ -42,28 +42,19 @@ document.createElement('content');
 			<h3>Редактор</h3>
 
 
-			<?php
-	
-			include 'inc.php';
-			
-			
-			// блок записи в БД	
-
-			if (isset($_POST["password"])) {
-				if ($_POST["password"] == MyPW()) {
-					
-					MySaveBDSQL();
-					
-				} else {
-					echo "<p style=\"margin-left:250px;\">У Вас нет прав доступа на редактирование.<br>"
-					."Пожалуйста, вернитесь назад и повторите ввод.<br>"
-					."Возможно Вы ошиблись при вводе пароля.</p>";
-					exit;
-
-				}
-			}
-			
-			?>
+	<?php
+	include 'inc.php';
+	// блок записи в БД	
+	if (isset($_POST["password"])) {
+		if ($_POST["password"] == MyPW()) {
+			MySaveBDSQL();
+		} else {
+			echo "<p style=\"margin-left:250px;color:red;\">У Вас нет прав доступа на удаление записи.<br /><br />"
+			."Возможно, Вы ошиблись при вводе пароля.<br />"
+			."Пожалуйста, повторите ввод.</p>";
+		}
+	}
+	?>
 			
 	<FORM ACTION="edit.php" METHOD="POST">
 		<table style="font-size:14px;margin:10px;padding:10px;border:1px gray solid;margin-left:230px;">
@@ -76,9 +67,12 @@ document.createElement('content');
 		<tr style="font-size:12px;margin:10px;padding:10px;"><td>Почта:</td>
 		<td><TEXTAREA NAME="msg4" COLS=50 ROWS=10><?php echo MyReadBDSQL(5); ?></TEXTAREA></td></tr>
 		<tr style="font-size:12px;margin:10px;padding:10px;"><td>&nbsp;</td>
-		<td><INPUT TYPE="submit" VALUE=" Отредактировать ">
-			<input type="password" name="password" value="Пароль">
-		</td></tr>		
+		<td style="text-align:right;">
+			<input style="width:30px;" type="password" name="password" value="Пароль" title="Укажите пароль" />
+			<input style="cursor:pointer;" type="submit" value=" Отредактировать " title="Отредактируйте запись" />
+		</td>
+		
+		</tr>		
 		</table>
 	</FORM>
 		<br /><br /><br /><br /><br />	
