@@ -49,9 +49,9 @@ document.createElement('content');
 		if ($_POST["password"] == MyPW()) {
 			MySaveBDSQL();
 		} else {
-			echo "<p style=\"margin-left:250px;color:red;\">У Вас нет прав доступа на удаление записи.<br /><br />"
+			echo "<p style=\"margin-left:250px;color:red;\">У Вас нет прав доступа на редактирование записей.<br /><br />"
 			."Возможно, Вы ошиблись при вводе пароля.<br />"
-			."Пожалуйста, повторите ввод.</p>";
+			."Пожалуйста, повторите ввод пароля.</p>";
 		}
 	}
 	?>
@@ -67,9 +67,9 @@ document.createElement('content');
 		<tr style="font-size:12px;margin:10px;padding:10px;"><td>Почта:</td>
 		<td><?php echo '<textarea class="ViewEdit" name="msg4" cols=50 rows=10>'.trim(MyReadBDSQL(5), "\x00..\x1F"); ?></textarea></td></tr>
 		<tr style="font-size:12px;margin:10px;padding:10px;"><td>&nbsp;</td>
-		<td style="text-align:right;">
+		<td style="text-align:right;">Пароль: 
 			<input style="width:30px;" type="password" name="password" value="Пароль" title="Укажите пароль" />
-			<input style="cursor:pointer;" type="submit" value=" Отредактировать " title="Отредактируйте запись" />
+			<input style="cursor:pointer;" type="submit" value=" Отредактировать " title="Отредактируйте записи" />
 		</td>
 		
 		</tr>		
