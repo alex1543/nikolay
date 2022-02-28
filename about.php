@@ -31,7 +31,7 @@ document.createElement('content');
 		<aside>
 
 			<ul>
-			<li><a href="index.html">Главная</a></li>
+			<li><a href=".">Главная</a></li>
 			<p>Обо мне</p>
 			<li><a href="guestbook.php">Гостевая книга</a></li>
 			<li><a href="interests.php">Мои интересы</a></li>

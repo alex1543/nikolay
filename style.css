@@ -44,6 +44,25 @@ header h1 a, header h2 a {
     padding-left: 12px;
 }
 
+
+main h1{
+	text-align:left;
+	color:#07152f;
+	padding-left:275px;
+    font-size: 36px;
+}
+ main h1 a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #6AAA8A;
+    text-shadow: 1px 1px 2px black, 0 0 1em #9fcbb5;
+    padding-left: 12px;	 
+}
+ main h1 a:hover {
+    color: #5EA180;	
+    text-shadow: 1px 1px 2px black, 0 0 1em #6AAA8A;	
+}
+
 /*nav*/
 nav{
 	float:left;
