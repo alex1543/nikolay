@@ -14,13 +14,13 @@
 // основной блок	
 ?>
 
-<button style="margin-left:320px;width:70px;" onclick='alerted();' title="Добавьте запись"> Добавить </button>
+<button style="margin-left:320px;width:70px;cursor:pointer;" onclick='alerted();' title="Добавьте запись"> Добавить </button>
 	<FORM ACTION="guestbook.php" METHOD="POST" id="addForm" style="display: none;">
 		<table>
 			<tr><td>Ваше имя:</td><td><INPUT TYPE="text" NAME="name" SIZE=20 MAXLENGTH="30"><td></tr>
 			<tr><td>Ваш email:</td><td><INPUT TYPE="text" NAME="email" SIZE=20 MAXLENGTH="30"></td></tr>
 			<tr><td>Сообщение:</td><td><TEXTAREA NAME="message" COLS=50 ROWS=10></TEXTAREA></td></tr>
-			<tr><td>&nbsp;</td><td><INPUT TYPE="submit" VALUE=" Отправить "></td></tr>		
+			<tr><td>&nbsp;</td><td><INPUT style="cursor:pointer;" TYPE="submit" VALUE=" Отправить "></td></tr>		
 		</table>
 	</FORM>
 <script type="text/javascript">
@@ -56,10 +56,9 @@ function alerted(){
 		$message=$_POST["message"];
 		if ($name=="" || $email==""  || $message=="" )
 		{
-			echo "<p style=\"margin-left:250px;\">Вы указали не все детали.<br>"
-			."Пожалуйста, вернитесь назад и повторите ввод.</p>";
-			exit;
-		}
+			echo "<p style=\"margin-left:250px;color:red;\">Вы указали не все детали.<br />"
+			."Пожалуйста, повторите ввод.</p>";
+		} else {
 
 
 		$name = mysqli_real_escape_string($db,$name);
@@ -77,6 +76,7 @@ function alerted(){
 		$query = "insert into notes (name, email, text) values ('".strip_tags($name)."', '".strip_tags($email)."', '".strip_tags($message)."')";
 		$result = mysqli_query($db,$query);
 		echo mysqli_error($db);
+		}
 	}
 
 // блок показа записей на экране	
@@ -114,7 +114,7 @@ if ($result) {
 			<form ACTION="guestbook.php" METHOD="GET">
 			<input type="hidden" name="id" value="<?php echo $row["id"]; ?>" />
 			<input style="width:30px;" type="password" name="password" value="Пароль" title="Укажите пароль" />
-			<input type="submit" value=" Удалить запись " title="Удалите запись" />
+			<input style="cursor:pointer;" type="submit" value=" Удалить запись " title="Удалите запись" />
 			&nbsp;</form>
 		</td>
 	</tr>
