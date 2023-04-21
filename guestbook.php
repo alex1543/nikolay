@@ -1,16 +1,6 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
-<!-- saved from url=(0014)about:internet -->
-<script>
-document.createElement('header');
-document.createElement('footer');
-document.createElement('nav');
-document.createElement('main');
-document.createElement('aside');
-document.createElement('content');
-
-</script>
 	<meta charset="UTF-8">
 	<title>Николай Стрижаченко: Гостевая книга</title>
 	<meta name="description" content="Николай Стрижаченко, Личная страничка"> 
