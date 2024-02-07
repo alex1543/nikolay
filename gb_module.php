@@ -5,11 +5,9 @@
 // блок подключения к базе данных
 	@ $db = mysqli_connect($MySQLServer, $MyUser, $MyPasswordSQL);
 
-	if (!$db)
-	{
-		echo "Ошибка: не удается соединиться с сервером.";
-		exit;
-	}
+	if (!$db) {
+		echo "<div class='error'>Ошибка: не удается соединиться с сервером (".$MySQLServer.").</div>";
+	} else {
 
 // основной блок	
 ?>
@@ -129,6 +127,9 @@ if ($result) {
 }
 	
 	mysqli_close($db);
+	
+
+	// если подкл. к серверу есть.
+}
 
 ?>
-
