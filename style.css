@@ -182,10 +182,17 @@ main h4 {
 	margin-left:250px;
 	color:#18427c;
 }
-main p{
+main p {
 	margin-top:25px;
 	margin-left:215px;
 	color:#18427c;
+}
+main .error {
+	margin-top: 25px;
+    margin-left: 215px;
+    color: #ffffff;
+    background: #ef4848;
+    padding: 10px;
 }
 main a {
 	color:#909090;
