@@ -106,7 +106,14 @@
 		}
 		mysqli_close($db);			
 	}
-			
+
+	function MyIsConnDB() {
+		include 'deff.php';
+		@ $db = mysqli_connect($MySQLServer, $MyUser, $MyPasswordSQL);
+		if (!$db) return "<div class='error'>Ошибка: не удается соединиться с сервером (".$MySQLServer.").</div>";
+		return '';
+	}
+	
 	function MyReadBDSQL($MyIDInBD) {
 
 		include 'deff.php';

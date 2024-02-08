@@ -34,6 +34,11 @@
 
 	<?php
 	include 'inc.php';
+	
+	$isConn = MyIsConnDB();
+	if ($isConn != '') {
+		echo $isConn;
+	} else {
 	// блок записи в БД	
 	if (isset($_POST["password"])) {
 		if ($_POST["password"] == MyPW()) {
@@ -67,7 +72,7 @@
 	</FORM>
 		<br /><br /><br /><br /><br />	
 		
-			
+<?php } ?>
 		</main>	
 	</content>
 	<footer>
